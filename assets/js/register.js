@@ -19,6 +19,13 @@
     const email=document.getElementById('rEmail').value;
     const password=document.getElementById('rPassword').value;
     const userName=document.getElementById('username').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
 
 
     const auth=getAuth();
