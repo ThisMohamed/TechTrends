@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+
+        </div>
+        <p class="header__alert-news">
+        </p>
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+      </div>
+    </div>
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/logoo.jpg" alt="website logo" />
+      </a>
+
+      <div class="header__search">
+        <input type="text" placeholder="Search For Items..." class="form__input" />
+        <button class="search__btn">
+          <img src="assets/img/search.png" alt="search icon" />
+        </button>
+      </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="wishlist_not_working.html" class="header__action-btn" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+          <span class="count fav-ctr">0</span>
+
+          <a href="cart_not_working.html" class="header__action-btn" title="Cart">
+            <img src="assets/img/icon-cart.svg" alt="" />
+            <span class="count fav-ctr">0</span>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <!--=============== BREADCRUMB ===============-->
+  <section class="breadcrumb">
+    <ul class="breadcrumb__list flex container">
+      <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+      <li><span class="breadcrumb__link"></span>></li>
+      <li><a href="smartphones.html" class="breadcrumb__link">SmartPhones</a></li>
+      <li><span class="breadcrumb__link"></span>></li>
+      <li><span class="breadcrumb__link">Samsung S22 Ultra </span></li>
+    </ul>
+  </section>
+
+  <!--=============== DETAILS ===============-->
+  <section class="details section--lg">
+    <div class="details__container container grid">
+      <div class="details__group">
+        <img src="./assets/img/sam22.jpg" alt="" class="details__img" />
+        <div class="details__small-images grid">
+          <img src="./assets/img/sam22.jpg" alt="" class="details__small-img" />
+
+        </div>
+      </div>
+      <div class="details__group">
+        <h3 class="details__title">Samsung S22 Ultra</h3>
+        <p class="details__brand">Brand: <span>Samsung</span></p>
+        <div class="details__price flex">
+          <span class="new__price">$900</span>
+          <span class="old__price">$1200</span>
+          <span class="save__price">20% Off</span>
+        </div>
+        <p class="short__description">
+          The Samsung Galaxy S22 Ultra features a robust design with aluminum and Gorilla Glass Victus, offering a
+          lightweight yet durable build. Its premium materials ensure resilience while maintaining a sleek aesthetic.
+        </p>
+        <ul class="products__list">
+          <li class="list__item flex">
+            <i class="fi-rs-crown"></i> 30 Days Samsung Brand Warranty
+          </li>
+          <li class="list__item flex">
+            <i class="fi-rs-refresh"></i> 15 Days Return Policy
+          </li>
+          <li class="list__item flex">
+            <i class="fi-rs-credit-card"></i> Cash on Delivery available
+          </li>
+        </ul>
+
+        <div class="details__action">
+          <input type="number" class="quantity" value="1" />
+          <a href="#" class="btn btn--sm">Add To Card</a>
+          <a href="#" class="details__action-btn">
+            <i class="fi fi-rs-heart"></i>
+          </a>
+        </div>
+        <ul class="details__meta">
+
+          <li class="meta__list flex">
+            <span>Tags:</span>Phone, Mobile, SmartPhones
+          </li>
+          <li class="meta__list flex">
+            <span>Availability:</span>8 Items in Stock
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--=============== DETAILS TAB ===============-->
+  <section class="details__tab container">
+    <div class="detail__tabs">
+      <span class="detail__tab active-tab" data-target="#info">
+        Additional Info
+      </span>
+      <span class="detail__tab" data-target="#reviews">Reviews(3)</span>
+    </div>
+    <div class="details__tabs-content">
+      <div class="details__tab-content active-tab" content id="info">
+        <table class="info__table">
+          <tr>
+            <th>Warranty</th>
+            <td>1 year international warranty</td>
+          </tr>
+          <tr>
+            <th>Brand</th>
+            <td>Samsung</td>
+          </tr>
+          <tr>
+            <th>Model Name</th>
+            <td>Galaxy S22 Ultra</td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td>Phantom Black</td>
+          </tr>
+          <tr>
+            <th>Storage Capacity</th>
+            <td>256 GB</td>
+          </tr>
+          <tr>
+            <th>RAM</th>
+            <td>12 GB</td>
+          </tr>
+          <tr>
+            <th>Main Camera Resolution</th>
+            <td>Quad Camera</td>
+          </tr>
+          <tr>
+            <th>Front Camera</th>
+            <td>40 MP</td>
+          </tr>
+          <tr>
+            <th>Number of SIM</th>
+            <td>Dual SIM</td>
+          </tr>
+          <tr>
+            <th>SIM Type</th>
+            <td>nano-SIM and eSIM</td>
+          </tr>
+          <tr>
+            <th>Operating System Type</th>
+            <td>Android</td>
+          </tr>
+          <tr>
+            <th>Processor Manufacturer</th>
+            <td>Samsung</td>
+          </tr>
+          <tr>
+            <th>Number of Processor Cores</th>
+            <td>Octa-Core</td>
+          </tr>
+          <tr>
+            <th>Network</th>
+            <td>5G</td>
+          </tr>
+          <tr>
+            <th>Connectivity</th>
+            <td>WiFi 6E, 5G Network, Bluetooth 5.2, USB Type-C</td>
+          </tr>
+          <tr>
+            <th>Video Recording Type</th>
+            <td>8K@24fps, 4K@30/60fps, 1080p@30/60fps</td>
+          </tr>
+          <tr>
+            <th>Camera Flash</th>
+            <td>LED flash, HDR</td>
+          </tr>
+          <tr>
+            <th>Port Type</th>
+            <td>USB Type-C</td>
+          </tr>
+          <tr>
+            <th>Resolution</th>
+            <td>1440 x 3088</td>
+          </tr>
+          <tr>
+            <th>Display Size</th>
+            <td>6.8 Inch</td>
+          </tr>
+          <tr>
+            <th>Display Type</th>
+            <td>Dynamic AMOLED 2X</td>
+          </tr>
+          <tr>
+            <th>Dimensions</th>
+            <td>163.3 x 77.9 x 8.9 mm</td>
+          </tr>
+          <tr>
+            <th>Water Resistant</th>
+            <td>IP68 Water and Dust Resistant</td>
+          </tr>
+          <tr>
+            <th>Wireless Charging</th>
+            <td>Yes</td>
+          </tr>
+
+
+
+        </table>
+      </div>
+      <div class="details__tab-content" content id="reviews">
+        <div class="reviews__container grid">
+          <div class="review__single">
+            <div>
+              <img src="./assets/img/avatar-1.jpg" alt="" class="review__img" />
+              <h4 class="review__title">Mohamed</h4>
+            </div>
+            <div class="review__data">
+              <div class="review__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <p class="review__description">
+                Thank you, very fast shipping to France only 3days.
+              </p>
+              <span class="review__date">October 10, 2024 at 3:12 pm</span>
+            </div>
+          </div>
+          <div class="review__single">
+            <div>
+              <img src="./assets/img/avatar-2.jpg" alt="" class="review__img" />
+              <h4 class="review__title">Sara</h4>
+            </div>
+            <div class="review__data">
+              <div class="review__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <p class="review__description">
+                Great low price and works well
+              </p>
+              <span class="review__date">October 10, 2024 at 3:12 pm</span>
+            </div>
+          </div>
+          <div class="review__single">
+            <div>
+              <img src="./assets/img/avatar-3.jpg" alt="" class="review__img" />
+              <h4 class="review__title">Moh Benz</h4>
+            </div>
+            <div class="review__data">
+              <div class="review__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <p class="review__description">
+                Authentic and beautiful, Love these ways more than ever
+                expected, They are great phones.
+              </p>
+              <span class="review__date">October 10, 2024 at 3:12 pm</span>
+            </div>
+          </div>
+        </div>
+        <div class="review__form">
+          <h4 class="review__form-title">Add a review</h4>
+          <div class="rate__product">
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+          </div>
+          <form action="" class="form grid">
+            <textarea class="form__input textarea" placeholder="Write Comment"></textarea>
+            <div class="form__group grid">
+            </div>
+            <div class="form__btn">
+              <button class="btn">Submit Review</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=============== PRODUCTS ===============-->
+  <section class="products container section--lg">
+    <h3 class="section__title"><span>Related</span> Products</h3>
+    <div class="products__container grid">
+      <div class="product__item">
+        <div class="product__banner">
+          <a href="details-23.html" class="product__images">
+            <img src="assets/img/sam23.jpg" alt="" class="product__img default" />
+            <img src="assets/img/sam23.jpg" alt="" class="product__img hover" />
+          </a>
+          <div class="product__actions">
+
+            <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+              <i class="fi fi-rs-heart"></i>
+            </a>
+
+          </div>
+          <div class="product__badge light-blue">-25%</div>
+        </div>
+        <div class="product__content">
+          <span class="product__category">Smart Phone</span>
+          <a href="details-23.html">
+            <h3 class="product__title">Samsung S23 Ultra</h3>
+          </a>
+          <div class="product__rating">
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+          </div>
+          <div class="product__price flex">
+            <span class="new__price">$900</span>
+            <span class="old__price">$1200</span>
+          </div>
+          <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+            <i class="fi fi-rs-shopping-bag-add"></i>
+          </a>
+        </div>
+      </div>
+      <div class="product__item">
+        <div class="product__banner">
+          <a href="details-24.html" class="product__images">
+            <img src="assets/img/sam24.jpg" alt="" class="product__img default" />
+            <img src="assets/img/sam24.jpg" alt="" class="product__img hover" />
+          </a>
+          <div class="product__actions">
+
+            <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+              <i class="fi fi-rs-heart"></i>
+            </a>
+
+          </div>
+          <div class="product__badge light-blue">-20%</div>
+        </div>
+        <div class="product__content">
+          <span class="product__category">Smart Phone</span>
+          <a href="details-24.html">
+            <h3 class="product__title">Samsung S24 Ultra</h3>
+          </a>
+          <div class="product__rating">
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+          </div>
+          <div class="product__price flex">
+            <span class="new__price">$1040</span>
+            <span class="old__price">$1300</span>
+          </div>
+          <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+            <i class="fi fi-rs-shopping-bag-add"></i>
+          </a>
+        </div>
+      </div>
+      <div class="product__item">
+        <div class="product__banner">
+          <a href="details-21.html" class="product__images">
+            <img src="assets/img/sam21.jpg" alt="" class="product__img default" />
+            <img src="assets/img/sam21.jpg" alt="" class="product__img hover" />
+          </a>
+          <div class="product__badge light-green">-25%</div>
+          <div class="product__actions">
+
+            <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+              <i class="fi fi-rs-heart"></i>
+            </a>
+          </div>
+        </div>
+        <div class="product__content">
+          <span class="product__category">Smart Phone</span>
+          <a href="details-21.html">
+            <h3 class="product__title">Samsung S21 Ultra</h3>
+          </a>
+          <div class="product__rating">
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+            <i class="fi fi-rs-star"></i>
+          </div>
+          <div class="product__price flex">
+            <span class="new__price">$750</span>
+            <span class="old__price">$1000</span>
+          </div>
+          <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+            <i class="fi fi-rs-shopping-bag-add"></i>
+          </a>
+        </div>
+      </div>
+
+  </section>
+
+
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <div class="footer__container grid">
+      <div class="footer__content">
+
+        <h4 class="footer__subtitle">Contact :</h4>
+        <p class="footer__description">
+          <span>City:</span> Beni Suef
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span> +20 1060671290
+        </p>
+        <p class="footer__description">
+          <span>Hours:</span> 10:00 AM - 12:00 PM
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Me :</h4>
+          <div class="footer__links flex">
+            <a href="https://www.facebook.com/loka7med" target="_blank">
+              <img src="./assets/img/facebook.png" alt="Facebook" class="footer__social-icon" />
+            </a>
+            <a href="https://x.com/M777md74" target="_blank">
+              <img src="./assets/img/twitter.png" alt="" class="footer__social-icon" />
+            </a>
+            <a href="https://www.instagram.com/loka.a23/" target="_blank">
+              <img src="./assets/img/instagram.png" alt="" class="footer__social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/m77md/" target="_blank">
+              <img src="./assets/img/linkedin.png" alt="" class="footer__social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+      </div>
+      <div class="footer__content">
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Secured Payed Gateways</h3>
+        <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2024 TechTrends. All right reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

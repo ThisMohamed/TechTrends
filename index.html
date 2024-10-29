@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script type="module" src="assets/js/register.js"></script>
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+
+        <p class="header__alert-news">
+        </p>
+        <a href="login-register.html" class="header__top-action">
+          Log In / Sign Up
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/logoo.jpg" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Shop</a>
+          </li>
+
+
+        </ul>
+        <div class="header__search">
+          <input type="text" placeholder="Search For Items..." class="form__input" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
+        </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="wishlist_not_working.html" class="header__action-btn fav" title="Wishlist">
+          <img src="assets/img/icon-heart.svg" alt="" />
+          <span class="count fav-ctr">0</span>
+        </a>
+        <a href="cart_not_working.html" class="header__action-btn cart fav" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          <span class="count cart-ctr">0</span>
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="assets//img/menu-burger.svg" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--=============== HOME ===============-->
+  <section class="home section--lg">
+    <div class="home__container container grid">
+      <div class="home__content">
+        <h1 class="home__title">
+          Tech Trends <span>Top Electronics Store</span>
+        </h1>
+        <a href="shop.html" class="btn">Shop Now</a>
+      </div>
+      <img src="assets/img/home-immg.png" class="home__img" alt="hats" />
+    </div>
+  </section>
+
+  <section class="categories container section">
+    <h3 class="section__title"><span>Popular</span> Categories</h3>
+    <div class="categories__container swiper">
+      <div class="swiper-wrapper">
+        <a href="smartphones.html" class="category__item swiper-slide">
+          <img src="assets/img/SmartPhones.png" alt="Smartphones" class="category__img" />
+          <h3 class="category__title">Smartphones</h3>
+        </a>
+        <a href="laptops.html" class="category__item swiper-slide">
+          <img src="assets/img/laptop.png" alt="Laptops" class="category__img" />
+          <h3 class="category__title">Laptops</h3>
+        </a>
+        <a href="tvs.html" class="category__item swiper-slide">
+          <img src="assets/img/TV.png" alt="Televisions" class="category__img" />
+          <h3 class="category__title">Televisions</h3>
+        </a>
+        <a href="headphones.html" class="category__item swiper-slide">
+          <img src="assets/img/Headphone.png" alt="Headphones" class="category__img" />
+          <h3 class="category__title">Headphones</h3>
+        </a>
+        <a href="smartwatches.html" class="category__item swiper-slide">
+          <img src="assets/img/Smart.png" alt="Smart Watches" class="category__img" />
+          <h3 class="category__title">Smart Watches</h3>
+        </a>
+        <a href="tablets.html" class="category__item swiper-slide">
+          <img src="assets/img/tablet.png" alt="Tablets" class="category__img" />
+          <h3 class="category__title">Tablets</h3>
+        </a>
+      </div>
+
+      <div class="swiper-button-prev">
+        <i class="fi fi-rs-angle-left"></i>
+      </div>
+      <div class="swiper-button-next">
+        <i class="fi fi-rs-angle-right"></i>
+      </div>
+    </div>
+  </section>
+
+
+  <!--=============== PRODUCTS ===============-->
+  <section class="products container section">
+    <div class="tab__btns">
+      <span class="tab__btn active-tab" data-target="#featured">Featured</span>
+    </div>
+
+    <div class="tab__items">
+      <div class="tab__item active-tab" content id="featured">
+        <div class="products__container grid">
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details-16.html" class="product__images">
+                <img src="assets/img/iphone16.jpg" alt="" class="product__img default" />
+                <img src="assets/img/iphone16.jpg" alt="" class="product__img hover" />
+              </a>
+              <div class="product__actions">
+
+                <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+              </div>
+              <div class="product__badge light-pink">Hot</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Smartphones</span>
+              <a href="details-16.html">
+                <h3 class="product__title">iPhone 16 Pro Max</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">$1100</span>
+                <span class="old__price">$1400</span>
+              </div>
+              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details-15.html" class="product__images">
+                <img src="assets/img/iphone15.png" alt="" class="product__img default" />
+                <img src="assets/img/iphone15.png" alt="" class="product__img hover" />
+              </a>
+              <div class="product__actions">
+
+                <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+              </div>
+              <div class="product__badge light-green">Hot</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Smartphones</span>
+              <a href="details-15.html">
+                <h3 class="product__title">iPhone 15 Pro Max</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">$1000</span>
+                <span class="old__price">$1300</span>
+              </div>
+              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details-A9.html" class="product__images">
+                <img src="assets/img/SamsungGalaxyTabA9.jpeg" alt="" class="product__img default" />
+                <img src="assets/img/SamsungGalaxyTabA9.jpeg" alt="" class="product__img hover" />
+              </a>
+              <div class="product__actions">
+
+                <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+              </div>
+              <div class="product__badge light-pink">Hot</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Tablet</span>
+              <a href="details-A9.html">
+                <h3 class="product__title">Samsung Galaxy Tab A9</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">$238.85</span>
+                <span class="old__price">$245.8</span>
+              </div>
+              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details-x9.html" class="product__images">
+                <img src="assets/img/HonorPadX9.jpg" alt="" class="product__img default" />
+                <img src="assets/img/HonorPadX9.jpg" alt="" class="product__img hover" />
+              </a>
+              <div class="product__actions">
+
+                <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+              </div>
+              <div class="product__badge light-green">Hot</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Tablet</span>
+              <a href="details-x9.html">
+                <h3 class="product__title">Honor Pad X9</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">$238.85</span>
+                <span class="old__price">$245.8</span>
+              </div>
+              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details-f2.html" class="product__images">
+                <img src="assets/img/OdabanF2.jpg" alt="" class="product__img default" />
+                <img src="assets/img/OdabanF2.jpg" alt="" class="product__img hover" />
+              </a>
+              <div class="product__actions">
+
+                <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+              </div>
+              <div class="product__badge light-blue">-30%</div>
+            </div>
+            <br><br>
+            <div class="product__content">
+              <span class="product__category">Headphone</span>
+              <a href="details-f2.html">
+                <h3 class="product__title">Odaban F2</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">$250</span>
+                <span class="old__price">$300</span>
+              </div>
+              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details-x3.html" class="product__images">
+                <img src="assets/img/hyberx.jpg" alt="" class="product__img default" />
+                <img src="assets/img/hyberx.jpg" alt="" class="product__img hover" />
+              </a>
+              <div class="product__actions">
+
+                <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+              </div>
+              <div class="product__badge light-blue">-22%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">HeadPhone</span>
+              <a href="details-x3.html">
+                <h3 class="product__title">HyperX Cloud III</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">$250</span>
+                <span class="old__price">$300</span>
+              </div>
+              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details-idea.html" class="product__images">
+                <img src="assets/img/idea.jpg" alt="" class="product__img default" />
+                <img src="assets/img/idea.jpg" alt="" class="product__img hover" />
+              </a>
+              <div class="product__actions">
+
+                <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+              </div>
+              <div class="product__badge light-pink">Hot</div>
+            </div>
+            <br><br>
+            <div class="product__content">
+              <span class="product__category">Laptop</span>
+              <a href="details-idea.html">
+                <h3 class="product__title">Lenovo IdeaPad Gaming 3</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">$250</span>
+                <span class="old__price">$300</span>
+              </div>
+              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details-loq.html" class="product__images">
+                <img src="assets/img/loq.jpg" alt="" class="product__img default" />
+                <img src="assets/img/loq.jpg" alt="" class="product__img hover" />
+              </a>
+              <div class="product__actions">
+
+                <a href="#" class="action__btn wish-add" aria-label="Add to Wishlist">
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+
+              </div>
+              <div class="product__badge light-green">Hot</div>
+            </div>
+            <br><br> <br>
+            <div class="product__content">
+              <span class="product__category">Laptop</span>
+              <a href="details-loq.html">
+                <h3 class="product__title">Lenovo LOQ 15APH8 Gaming Laptop</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">$250</span>
+                <span class="old__price">$300</span>
+              </div>
+              <a href="#" class="action__btn cart__btn" aria-label="Add To Cart">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <section class="showcase section">
+    <div class="showcase__container container grid">
+      <div class="showcase__wrapper">
+        <h3 class="section__title">Hot Releases</h3>
+        <div class="showcase__item">
+          <a href="details-16.html" class="showcase__img-box">
+            <img src="./assets/img/iphone16.jpg" alt="" class="showcase__img" />
+          </a>
+          <div class="showcase__content">
+            <a href="details-16.html">
+              <h4 class="showcase__title">
+                iPhone 16 Pro Max
+              </h4>
+            </a>
+            <div class="showcase__price flex">
+              <span class="new__price">$1100</span>
+              <span class="old__price">$1400</span>
+            </div>
+          </div>
+        </div>
+        <div class="showcase__item">
+          <a href="details-x9.html" class="showcase__img-box">
+            <img src="./assets/img/HonorPadX9.jpg" alt="" class="showcase__img" />
+          </a>
+          <div class="showcase__content">
+            <a href="details-x9.html">
+              <h4 class="showcase__title">
+                Honorpad X9
+              </h4>
+            </a>
+            <div class="showcase__price flex">
+              <span class="new__price">$250</span>
+              <span class="old__price">$300</span>>
+            </div>
+          </div>
+        </div>
+        <div class="showcase__item">
+          <a href="details-f2.html" class="showcase__img-box">
+            <img src="./assets/img/OdabanF2.jpg" alt="" class="showcase__img" />
+          </a>
+          <div class="showcase__content">
+            <a href="details-f2.html">
+              <h4 class="showcase__title">
+                OdabanF2
+              </h4>
+            </a>
+            <div class="showcase__price flex">
+              <span class="new__price">$250</span>
+              <span class="old__price">$300</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!--=============== FOOTER ===============-->
+
+  <footer class="footer container">
+    <div class="footer__container grid">
+      <div class="footer__content">
+
+        <h4 class="footer__subtitle">Contact :</h4>
+        <p class="footer__description">
+          <span>City:</span> Beni Suef
+        </p>
+        <p class="footer__description">
+          <span>Phone:</span> +20 1060671290
+        </p>
+        <p class="footer__description">
+          <span>Hours:</span> 10:00 AM - 12:00 PM
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Follow Me :</h4>
+          <div class="footer__links flex">
+            <a href="https://www.facebook.com/loka7med" target="_blank">
+              <img src="./assets/img/facebook.png" alt="Facebook" class="footer__social-icon" />
+            </a>
+            <a href="https://x.com/M777md74" target="_blank">
+              <img src="./assets/img/twitter.png" alt="" class="footer__social-icon" />
+            </a>
+            <a href="https://www.instagram.com/loka.a23/" target="_blank">
+              <img src="./assets/img/instagram.png" alt="" class="footer__social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/m77md/" target="_blank">
+              <img src="./assets/img/linkedin.png" alt="" class="footer__social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+      </div>
+      <div class="footer__content">
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Secured Payed Gateways</h3>
+        <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2024 TechTrends. All right reserved</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
