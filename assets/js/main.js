@@ -1,4 +1,3 @@
-
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
@@ -7,21 +6,33 @@ let favCtr = document.querySelector(".fav-ctr");
 let cartCtr = document.querySelector(".cart-ctr");
 
 let wishAdd = document.querySelectorAll(".wish-add");
-let cartAdd = document.querySelectorAll("cart__btn");
+let cartAdd = document.querySelectorAll(".cart__btn");
 
-// console.log(wishAdd);
+console.log(cartAdd);
 wishAdd.forEach((e) => {
   e.addEventListener("click", () => {
-    favCtr.innerHTML = parseInt(favCtr.innerHTML)+1;
+    if (!e.classList.contains("unclickable")) {
+      // e.classList.add("fav-added");
+      e.classList.add("unclickable");
+      e.style.backgroundColor = "hsl(176deg 10.2% 51.78%)";
+      favCtr.innerHTML = parseInt(favCtr.innerHTML) + 1;
+    }
   });
 });
 
-cartAdd.forEach((e)=>{
-  e.addEventListener("click", ()=>{
-    cartCtr.innerHTML = parseInt(cartCtr.innerHTML)+1;
+cartAdd.forEach((e) => {
+  e.addEventListener("click", () => {
+    if (!e.classList.contains("unclickable")) {
+      // e.classList.add("cart-added");
+      e.classList.add("unclickable");
+      e.style.backgroundColor = "hsl(176deg 10.2% 51.78%)";
 
+      console.log(cartCtr.innerHTML);
+      cartCtr.innerHTML = parseInt(cartCtr.innerHTML) + 1;
+    }
   });
- });
+});
+
 function imgGallery() {
   let e = document.querySelector(".details__img"),
     t = document.querySelectorAll(".details__small-img");
