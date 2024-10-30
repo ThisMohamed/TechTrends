@@ -1103,7 +1103,7 @@ table {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.details__action-btn,
+.action__btn wish-add,
 .quantity,
 .size__link {
   border: 1px solid var(--border-color-alt);
@@ -1136,7 +1136,7 @@ table {
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
 }
-.details__action-btn {
+.action__btn wish-add {
   color: var(--text-color);
   line-height: 40px;
   padding-inline: 0.75rem;
