@@ -194,7 +194,6 @@
 
   <!--=============== Custom JS ===============-->
   <script>
-    // Predefined items for demo
     const products = [
       {
         id: 1,
@@ -216,7 +215,6 @@
       },
     ];
 
-    // Function to update total price and subtotal when quantity changes
     function updateTotal() {
       let total = 0;
       document.querySelectorAll('.subtotal').forEach(subtotal => {
@@ -225,7 +223,6 @@
       document.querySelector('.cart__total-price').textContent = `$${total.toFixed(0)}`;
     }
 
-    // Function to add a product to the cart
     function addProductToCart(product) {
       const cartItems = document.getElementById('cart-items');
       const row = document.createElement('tr');
@@ -240,7 +237,6 @@
 
       cartItems.appendChild(row);
 
-      // Add event listener to update subtotal when quantity changes
       row.querySelector('.quantity').addEventListener('input', function () {
         const qty = parseInt(this.value);
         const price = parseFloat(product.price);
@@ -253,19 +249,16 @@
       updateTotal();
     }
 
-    // Function to remove an item from the cart
     function removeItem(element) {
       const row = element.closest('tr');
       row.remove();
       updateTotal();
     }
 
-    // Initialize the cart (empty at first)
     products.forEach(product => {
       addProductToCart(product);
     });
 
-    // When a quantity of any product is added, show the cart
     function updateSubtotal() {
       const quantities = document.querySelectorAll('.quantity');
       const subtotals = document.querySelectorAll('.subtotal');
